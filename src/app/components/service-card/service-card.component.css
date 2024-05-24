@@ -77,7 +77,17 @@ img {
   transition: all 0.5s;
   background-color: var(--secondary_color);
 }
+@media screen and (max-width: 800px) {
+  .visible-img {
+    transition: all 0.5s;
+    transform: scale(100%);
+  }
 
+  .visible {
+    transition: all 0.5s;
+    transform: translateY(-30px);
+  }
+}
 @media screen and (max-width: 500px) {
   .card {
     height: fit-content;

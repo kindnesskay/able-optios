@@ -6,8 +6,6 @@ import { ImageSideComponent } from '../components/image-side/image-side.componen
   standalone: true,
   imports: [ImageSideComponent],
   templateUrl: './team.component.html',
-  styleUrl: './team.component.css'
+  styleUrl: './team.component.css',
 })
-export class TeamComponent {
-
-}
+export class TeamComponent {}
