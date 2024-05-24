@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 800px) {
   .the-team-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-radius: 0;
   }
   .the-team-content {

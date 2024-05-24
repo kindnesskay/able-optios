@@ -5,6 +5,7 @@
   justify-content: center;
   width: 100%;
   padding: 5px;
+  color: var(--primary_color);
 }
 .info-videos {
   display: grid;
@@ -28,16 +29,11 @@
 h2 {
   font-size: 42px;
   font-weight: 800;
-  color: var(--primary_color);
   padding-left: 10px;
   padding: 10px;
   margin-bottom: 10px;
   border-left: 5px solid var(--primary_color);
   text-align: start;
-}
-.info-content p {
-  font-size: 15px;
-  color: rgb(86, 85, 85);
 }
 
 .what-is-ndis {
@@ -54,6 +50,7 @@ h2 {
   display: flex;
   gap: 20px;
   align-items: center;
+  color: var(--primary_color);
 }
 
 .ndis-services-img {
@@ -90,7 +87,7 @@ h2 {
     padding: 10px;
   }
   .ndis-services {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .ndis-services-content,
   .ndis-services-img {
