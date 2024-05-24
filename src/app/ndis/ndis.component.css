@@ -1,0 +1,136 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+}
+.info-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+.info-content {
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+  text-align: justify;
+}
+.info-content h1,
+h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--primary_color);
+  padding-left: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--primary_color);
+  text-align: start;
+}
+.info-content p {
+  font-size: 15px;
+  color: rgb(86, 85, 85);
+}
+
+.what-is-ndis {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ndis-price-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ndis-services {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ndis-services-img {
+  overflow: hidden;
+  width: 50%;
+  padding: 0;
+  height: fit-content;
+}
+.ndis-services-img img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+  border-radius: 20px;
+}
+.ndis-services-content {
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+}
+.ndis-services-content p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.bottom {
+  padding: 50px 10px;
+  background-color: var(--gray);
+}
+@media screen and (max-width: 800px) {
+  .info-videos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  .ndis-services {
+    flex-direction: column;
+  }
+  .ndis-services-content,
+  .ndis-services-img {
+    width: 100%;
+  }
+  .info-content h1,
+  h2 {
+    font-size: 30px;
+  }
+}
+/* custom overay for top image */
+.custom {
+  display: flex;
+  position: relative;
+}
+.custom-img {
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(to right, #55006d73, #55006d72, #55006d6f);
+  border: none;
+}
+@media screen and (max-width: 400px) {
+  .info-content h1,
+  h2 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .info-content {
+    text-align: start;
+  }
+  .ndis-services-content {
+    text-align: start;
+  }
+}

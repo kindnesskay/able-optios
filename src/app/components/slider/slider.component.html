@@ -1,0 +1,27 @@
+<div class="slider-container">
+  <!-- <div class="hero-overlay"></div> -->
+  <div class="slides">
+    <div
+      class="slider"
+      *ngFor="let image of images; let i = index"
+      [ngStyle]="{
+        'background-image': 'url(' + image + ')',
+        transform: 'translateX(' + -100 * currentIndex + '%)'
+      }"
+    ></div>
+  </div>
+  <div class="hero-section">
+    <h1 class="">
+      <span class="exe"> EXCELLENCE &</span>
+      <span class="pre"> PRECISION </span>
+    </h1>
+    <p class="hero-text">
+      Able options Pty Ltd offers variety of support services for people living
+      in the North and the Northwest coast of Tasmania
+    </p>
+  </div>
+  <div class="controls">
+    <button (click)="prevImage()"><img src="assets/back.png" /></button>
+    <button (click)="nextImage()"><img src="assets/forward.png" /></button>
+  </div>
+</div>

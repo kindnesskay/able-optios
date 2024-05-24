@@ -1,0 +1,34 @@
+<header>
+  <div class="hide" id="blur-box"></div>
+  <nav [class]="{ scrolled: isScrolled }">
+    <div class="logo-container" routerLink="">
+      <img src="assets/logo.png" alt="able-options" />
+    </div>
+    <div class="menu">
+      <div class="menu-btn">
+        <img [src]="menuIcon" alt="menu" (click)="toggleMenu()" />
+      </div>
+      <ul class="menu-content show" id="menu">
+        <a routerLink="">
+          <li class="link link-1">Home</li>
+        </a>
+        <a routerLink="about">
+          <li class="link">About</li>
+        </a>
+        <a routerLink="ndis">
+          <li class="link">NDIS</li>
+        </a>
+        <a routerLink="services">
+          <li class="link">Services</li>
+        </a>
+
+        <a routerLink="contact-us">
+          <li class="link">Contact Us</li>
+        </a>
+      </ul>
+    </div>
+    <div class="ndis-img-container">
+      <img src="assets/ilovendis.png" />
+    </div>
+  </nav>
+</header>

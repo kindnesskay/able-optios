@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/montserrat/Montserrat-Bold.otf"), format("truetype");
+}
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("/assets/montserrat/Montserrat-Black.otf"), format("truetype");
+}
+* {
+  font-family: Montserrat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-optical-sizing: auto;
+  width: 100%;
+}
+h1 {
+  font-family: Montserrat-Black;
+}
+.heading {
+  font-family: Montserrat-Black;
+  color: var(--primary_color);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 800;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.heading:hover {
+  cursor: pointer;
+}
+.heading:hover .underline-heading {
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.underline-heading {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 0px;
+  width: 70%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 5px solid;
+}
+.hover-img:hover {
+  cursor: pointer;
+}
+.hover-img {
+  transition: all 0.5s;
+}
+.hover-img:hover {
+  transition: all 0.5s;
+  transform: scale(120%);
+}
+
+.primary-color {
+  background-color: #56006b;
+}
+.red-border {
+  border: 1px solid red;
+}
+:root {
+  --primary_color: #56006b;
+  --secondary_color: #770097;
+  --text_primary: rgb(46, 46, 46);
+  --gray: #f3f3f3;
+}
+body {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  width: 100%;
+  position: relative;
+}
+.text-size {
+  color: var(--primary_color);
+}
+.large-text {
+  font-size: 40px;
+  font-weight: 800;
+}
+main {
+  padding-top: 90px;
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  max-width: 1140px;
+}
+.image-slide {
+  height: 70vh;
+  max-height: 600px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-container button {
+  display: flex;
+  justify-content: center;
+}
+
+.image-slide {
+  height: 400px;
+}
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/*  */
+.banner-head {
+  @apply text-center font-bold text-white;
+  font-size: clamp(30px, 10vw, 80px);
+}
+@media screen and (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: clamp(25px, 30px, 35px);
+  }
+  .image-slide {
+    height: 200px;
+  }
+}

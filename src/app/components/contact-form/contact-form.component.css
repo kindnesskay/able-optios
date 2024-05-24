@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--text_primary);
+}
+input {
+  padding: 20px;
+  height: 60px;
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+}
+select {
+  padding: 20px;
+  height: 60px;
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+}
+textarea {
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+}
+input[type="submit"] {
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 16px;
+}

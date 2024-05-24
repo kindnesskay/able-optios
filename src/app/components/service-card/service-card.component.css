@@ -1,0 +1,85 @@
+.card {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.card:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.card:hover img {
+  transition: all 0.5s;
+  transform: scale(100%);
+}
+
+.card:hover .card-content {
+  transition: all 0.5s;
+  transform: translateY(-30px);
+}
+
+.card-content {
+  transition: all 0.5s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-content h2 {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  font-size: clamp(25px, 3vw, 42px);
+  color: var(--primary_color);
+}
+
+.card-content p {
+  text-align: center;
+  padding: 5px;
+  color: var(--primary_color);
+}
+.card-img {
+  overflow: hidden;
+  height: 300px;
+}
+img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.5s;
+  transform: scale(120%);
+}
+
+.contact-us {
+  background-color: var(--primary_color);
+  height: 50px;
+  width: fit-content;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
+}
+.contact-us:hover {
+  transition: all 0.5s;
+  background-color: var(--secondary_color);
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: fit-content;
+  }
+}

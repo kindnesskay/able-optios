@@ -1,0 +1,32 @@
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 50px 15px;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.contact-info {
+  width: 50%;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+  color: rgb(46, 46, 46);
+}
+.form-section {
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+  .contact-info,
+  .form-section {
+    width: 100%;
+  }
+}

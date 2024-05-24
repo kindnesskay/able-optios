@@ -1,0 +1,158 @@
+.slider-container {
+  height: 90vh;
+  max-height: 900px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, #000000, #000000ae, #ffffff00);
+}
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.slider {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition: ease-in-out 500ms;
+  opacity: 0.7;
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  bottom: 50%;
+  width: 100%;
+  justify-content: space-between;
+  height: fit-content;
+  z-index: 2;
+  padding: 10px;
+}
+.controls button {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.controls button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  width: fit-content;
+  max-width: 350px;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 1;
+  background-image: linear-gradient(to right, #56006d, #760097ae, #ffffff00);
+}
+.hero-section h1 {
+  font-family: Montserrat-Black;
+  width: fit-content;
+  font-weight: 800;
+  line-height: 30px;
+}
+.hero-text {
+  font-size: clamp(12px, 3vw, 21px);
+}
+.exe {
+  font-size: clamp(30px, 3vw, 40px);
+}
+.pre {
+  font-size: clamp(45px, 4vw, 70px);
+}
+.call-button {
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  max-width: 150px;
+  background-color: #582f61;
+  color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-1-top p {
+    text-align: justify;
+  }
+  .slider-container {
+    max-height: 400px;
+  }
+
+  .call-button {
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-left: 0;
+    max-height: 250px;
+  }
+  .hero-text {
+    width: 90%;
+    line-height: normal;
+  }
+  .hero-section {
+    padding-left: 15px;
+  }
+  .hero-section h1 {
+  }
+}
+@media screen and (max-width: 400px) {
+  .controls button {
+    height: 40px;
+    width: 40px;
+  }
+  .controls {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .controls button {
+    height: 35px;
+    width: 35px;
+  }
+  .hero-section {
+    width: calc(100vw - 70px);
+  }
+  .hero-text {
+    line-height: normal;
+  }
+  .exe {
+    font-size: clamp(18px, 3vw, 20px);
+  }
+  .pre {
+    font-size: clamp(20px, 3.5vw, 30px);
+  }
+}

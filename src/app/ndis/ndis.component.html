@@ -1,0 +1,105 @@
+<section>
+  <div class="image-slide custom">
+    <div class="overlay">
+      <h1 class="banner-head">NDIS</h1>
+    </div>
+    <div
+      class="custom-img"
+      [ngStyle]="{ 'background-image': 'url(' + left_image + ')' }"
+    ></div>
+    <div
+      class="custom-img"
+      [ngStyle]="{ 'background-image': 'url(' + right_image + ')' }"
+    ></div>
+  </div>
+  <div class="content">
+    <div class="info-videos container" #gridBoxes>
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[0].videoId"
+          [height]="boxes[0].height"
+          [width]="boxes[0].width"
+        ></app-video>
+      </div>
+      <!--  -->
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[1].videoId"
+          [height]="boxes[1].height"
+          [width]="boxes[1].width"
+        ></app-video>
+      </div>
+      <!--  -->
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[2].videoId"
+          [height]="boxes[2].height"
+          [width]="boxes[2].width"
+        ></app-video>
+      </div>
+    </div>
+    <div class="info-content container">
+      <!-- what is ndis -->
+      <div class="what-is-ndis">
+        <h1>WHAT IS NDIS?</h1>
+        <p>
+          The National Disability Insurance Scheme (NDIS) is run by the National
+          Disability Insurance Agency (NDIA).
+        </p>
+        <p>
+          Over 4 million people in Australia have a disability. The National
+          Disability Insurance Scheme (NDIS) offers more than $20 billion
+          dollars in support every year to an estimated 500,000 Australians with
+          a permanent and/or serious disability.
+        </p>
+        <p>
+          The NDIS defines a permanent impairment as one that will affect a
+          person throughout their lifetime, whereas a substantial disability is
+          one that will have a major impact on a person’s ability to conduct
+          daily activities.
+        </p>
+        <p>
+          Please visit the NDIS website for further information on eligibility
+          requirements if you or a family member satisfy this condition. The
+          NDIS will evaluate your claim and offer funds for you to receive
+          necessary support based on your customised plan to help you with your
+          daily living. Once approved, we at Able Options will be able to
+          collaborate with you to achieve your plan goals.
+        </p>
+      </div>
+      <!-- NDIS PRICE GUIDE -->
+      <div class="ndis-price-guide">
+        <h2>NDIS PRICE GUIDE</h2>
+        <p>
+          Able Options follows the NDIS Price Guide, so you can be rest assured
+          that your plan will be supported exactly as approved by the NDIS.
+          Please visit the NDIS website for more information on the
+          <a href="#"> NDIS Price Guide. </a>
+        </p>
+      </div>
+    </div>
+    <!-- NDIS SERVICES -->
+    <div class="content bottom">
+      <div class="ndis-services container">
+        <div class="ndis-services-content">
+          <h2>NDIS SERVICES</h2>
+          <p>
+            We at Able Options are here to support your plan in a professional,
+            courteous, and inclusive manner. Our team is certified to administer
+            medication, give eating assistance, and is committed to protecting
+            the safety of our NDIS clients through the management of risk
+            reports and development plans
+          </p>
+          <p>
+            We provide 24-hour support to our clients and collaborate with
+            families to provide the finest possible care to their loved ones in
+            need
+          </p>
+        </div>
+        <div class="ndis-services-img">
+          <img src="assets/business-people.jpg" alt="people-thumbs-up" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

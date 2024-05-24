@@ -1,0 +1,40 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-img {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.welcome-img img {
+  width: auto;
+  height: auto;
+}
+.welcome-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+}
+@media screen and (max-width: 800px) {
+  .welcome-container {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .welcome-content {
+    width: 100%;
+    text-align: center;
+  }
+  .welcome-img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+  }
+}
