@@ -1,22 +1,29 @@
 <form>
   <label [htmlFor]="'name'">
     Your name (Required)
-    <input type="text" id="name" name="name" placeholder="Name" />
+    <input type="text" id="name" name="name" placeholder="Name" required />
   </label>
   <label [htmlFor]="'email'">
     Your email (Required)
-    <input type="email" name="email" id="email" placeholder="Email" />
+    <input type="email" name="email" id="email" placeholder="Email" required />
   </label>
   <label [htmlFor]="'address-list'">Choose address closest to you </label>
-  <select name="address-list">
+  <select name="address-list" required>
+    <option value="" disabled selected hidden>select your option</option>
     <option value="brisbane">Brisbane</option>
     <option value="tasmania">Tasmania</option>
   </select>
   <label [htmlFor]="'subject'">
     Subject (Required)
-    <input type="text" name="subject" id="subject" placeholder="Subject" />
+    <input
+      type="text"
+      name="subject"
+      id="subject"
+      placeholder="Subject"
+      required
+    />
   </label>
   <label>Your message (optional) </label>
-  <textarea rows="10"></textarea>
+  <textarea rows="10" required></textarea>
   <input type="submit" value="SUBMIT" />
 </form>

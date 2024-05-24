@@ -3,16 +3,10 @@
   gap: 15px;
   height: fit-content;
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 15px;
+  margin-top: 10px;
 }
-.contents {
-}
-.includes {
-  color: var(--text_primary);
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-}
+
 .card {
   border: 1px solid rgb(220, 220, 220);
   padding: 10px;
@@ -25,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: var(--primary_color);
 }
 .card-content h2 {
   text-align: center;
@@ -35,7 +30,6 @@ img {
   width: auto;
   height: auto;
   max-width: 100%;
-  /* aspect-ratio: 1.4; */
 }
 
 .contact-us {
